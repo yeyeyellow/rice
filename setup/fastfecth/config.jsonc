@@ -1,0 +1,84 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+  "display": {
+    "separator": ": "
+  },
+  "logo": {
+    "source": "C:/Users/huang yao yao/.config/fastfetch/logo.txt",
+    "padding": {
+      "right": 5,
+      "left": 2
+    },
+    "type": "file"
+  },
+
+  "modules": [
+    // {
+    //   "source": "C:/Users/huang yao yao/.config/fastfetch/logo.txt",
+    //   "type": "file",
+    //   "padding": { "right": 4 }
+    // },
+
+    {
+      "type": "title",
+      "keyColor": "yellow",
+      "key": "Administrator",
+      "format": "{1}{@}{2}"
+    },
+
+    {
+      "type": "custom",
+      "format": "──────────────────────────────────────────────"
+    },
+
+    {
+      "type": "os",
+      "keyColor": "yellow",
+      "key": "OS"
+    },
+    {
+      "type": "board",
+      "keyColor": "yellow",
+      "key": "Motherboard",
+      "format": "{2} {3} ({4})"
+    },
+    {
+      "type": "cpu",
+      "keyColor": "yellow",
+      "key": "CPU",
+      "format": "{1} @ {4}"
+    },
+    {
+      "type": "gpu",
+      "keyColor": "yellow",
+      "key": "GPU"
+    },
+
+    {
+      "type": "memory",
+      "keyColor": "yellow",
+      "key": "Memory",
+      "format": "{2} / {1}"
+    },
+
+    {
+      "type": "disk",
+      "keyColor": "yellow",
+      "key": "Disk ({6})",
+      "format": "{2} / {1}",
+      "compact": false,
+      "useStat": false,
+      "showMapped": true
+    },
+    {
+      "key": "󰩟 Local IP ",
+      "keyColor": "magenta",
+      "type": "localip",
+      "compact": true
+    },
+
+    "break",
+    "colors"
+  ]
+}
